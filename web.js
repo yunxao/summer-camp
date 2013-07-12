@@ -3,7 +3,7 @@ var express = require('express');
 
 var app = express(); //.createServer(express.logger());
 
-resonse.log("iniciando la aplicacion");
+console.log("iniciando la aplicacion");
 
 app.get('/', function(request, response) {
   var fs = require('fs');
