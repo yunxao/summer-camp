@@ -2,7 +2,7 @@
 
 var express = require('express');
 
-var app = express.createServer(express.logger());
+var app = express(); //.createServer(express.logger());
 
 app.get('/', function(request, response) {
   var fs = require('fs');
