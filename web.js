@@ -3,16 +3,40 @@ var express = require('express');
 
 var app = express(); //.createServer(express.logger());
 
+var my_function = function (request, response){
+
+	var cad;
+	cad = "tmpdir:" + os.tmpdir() +"<br>";
+	cad = "endianness:" + os.endianness() +"<br>";
+	cad = "hostname:" + os.hostname() +"<br>";
+	cad = "type:" + os.type() +"<br>";
+	cad = "platform:" + os.platform() +"<br>";
+	cad = "arch:" + os.arch() +"<br>";
+	cad = "release:" + os.release() +"<br>";
+	cad = "uptime:" + os.uptime() +"<br>";
+	cad = "loadavg:" + os.loadavg() +"<br>";
+	cad = "totalmem:" + os.totalmem() +"<br>";
+	cad = "freemem:" + os.freemem() +"<br>";
+	cad = "cpus:" + os.cpus() +"<br>";
+	cad = ":" + os.() +"<br>";
+	cad = ":" + os.() +"<br>";
+	cad = ":" + os.() +"<br>";
+	cad = ":" + os.() +"<br>";
+	cad = ":" + os.() +"<br>";
+	cad = ":" + os.() +"<br>";
+	cad = ":" + os.() +"<br>";
+	cad = ":" + os.() +"<br>";
+	cad = ":" + os.() +"<br>";
+	response.send(cad);
+
+}
+
 console.log("iniciando la aplicacion");
 
-app.get('/', function(request, response) {
-  var fs = require('fs');
-
-  console.log("hemos recibido algo");
-//  var cad = fs.readFileSync('index.html','utf8');
-  response.send("hola mundo");
-});
+app.get('/',my_function);
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
+
+
