@@ -6,6 +6,7 @@ var app = express(); //.createServer(express.logger());
 var my_function = function (request, response){
 
 	var cad;
+	var os = require ('os');
 	cad = "tmpdir:" + os.tmpdir() +"<br>";
 	cad = "endianness:" + os.endianness() +"<br>";
 	cad = "hostname:" + os.hostname() +"<br>";
