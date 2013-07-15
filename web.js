@@ -18,15 +18,6 @@ var my_function = function (request, response){
 	cad = "totalmem:" + os.totalmem() +"<br>";
 	cad = "freemem:" + os.freemem() +"<br>";
 	cad = "cpus:" + os.cpus() +"<br>";
-	cad = ":" + os.() +"<br>";
-	cad = ":" + os.() +"<br>";
-	cad = ":" + os.() +"<br>";
-	cad = ":" + os.() +"<br>";
-	cad = ":" + os.() +"<br>";
-	cad = ":" + os.() +"<br>";
-	cad = ":" + os.() +"<br>";
-	cad = ":" + os.() +"<br>";
-	cad = ":" + os.() +"<br>";
 	response.send(cad);
 
 }
