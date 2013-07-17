@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-
+var libxml = require('libxmljs');
 var xmlDoc = libxml.parseXmlString('<item><data id="firstName">Your Name</data></item>');
-var xmlDoc = libxml.parseXmlString(cad);
+//var xmlDoc = libxml.parseXmlString(cad);
 
 var root = xmlDoc.root();
 console.log("Nombre de la raiz: "+root.name());
